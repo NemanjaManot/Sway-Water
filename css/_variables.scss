@@ -1,0 +1,49 @@
+/*  --- Colors ---  */
+$lightBlue: #c4edea;
+$textColor: #191919;
+$shopColor: #ff7d5e;
+$shopColorOpacity: rgba(255,125,94,0.3);
+$flavorsGreen: #e1f6b4;
+$flavorsYellow: #f8f49e;
+$flavorsPink: #fedfc0;
+$flavorsBlue: #dbe0d9;
+$whiteOpacity: rgba(255,255,255, 0.9);
+$locationBack: #f7f1d5;
+$newsletterBlue: #d3f1f7;
+$subscribeHover: #29353a;
+$whiteGradient: #f2f2f2;
+
+
+/* --- END colors --- */
+
+
+
+/* Transition */
+@mixin transition($var...) {
+	-webkit-transition: $var;
+	-moz-transition: $var;
+	-ms-transition: $var;
+	-o-transition: $var; 
+	transition: $var;
+}
+/*  --- END Transition ---  */
+
+/*  x-Transition */
+@mixin animation($var...) {
+	-webkit-animation: $var;
+	-moz-animation: $var;
+	-o-animation: $var; 
+	animation: $var;
+}
+/*  --- END Transition ---  */
+
+
+
+/*  --- Border radius --- */
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+/* --- END Border Radius --- */
+

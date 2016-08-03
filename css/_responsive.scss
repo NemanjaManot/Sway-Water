@@ -1,0 +1,170 @@
+@media screen and (max-width: 800px) {
+	/*  --- Starting paralax --- */
+	#all {
+		#first {
+			background-size: 20%;
+			#logo {
+				margin-top: 25%;
+				width: 60%;
+			} 
+		}
+		.senses {
+			margin-top: 30%;
+		}
+	}
+	/*  --- Text for paralax --- */
+	p.waterFor {
+		font-size: 350% !important;
+	}
+
+	/* --- Image with text border --- */
+	#parallaxImage2 {
+		#includeImageHere {
+			#forBorder {
+				margin: 0 15%;
+				p {
+					font-size: 250%;
+				}
+			}
+		}
+	}
+
+
+
+	/*  ---- Navigation ---- */
+	.nav-placeholder {
+		.contentModal {
+			top: 12%;
+		}
+		.hideForDesktop {
+			display: inline;
+			text-align: center;
+			width: 100%;
+			margin: 0 auto;
+			.logoOnMobile {
+				max-width: 20%;
+				padding-left: 10%;
+				display: inline;
+			}
+			.hamburgerIcon {
+				width: 6%;
+				cursor: pointer;
+				float: right;
+				padding-right: 3%;
+				padding-top: 1%;
+			}
+		}
+	}
+	nav {
+		ul {
+			li {
+				display: none;
+			}
+		}
+	}
+	
+
+
+	/*  -- One Column -- */
+	.oneColumn {
+		p {
+			font-size: 120%;
+			padding: 1% 5%;
+		}
+	}
+
+	/* --Two Columns -- */
+ 
+	 .twoColumns {
+		min-width: 95%;
+		margin: 0 auto !important;
+		max-width: 100%;
+		float: none;
+	}
+	.twoColumnsLeft {
+		margin: 0;
+	}
+	.twoColumnsRight {
+		margin: 0;
+	}
+
+	/*  -- Contact -- */
+
+	form {
+		textarea {
+			min-width: 70%;
+			padding: 1% 2%;
+		}
+	}
+
+/*  --- Newsletter (footer) --- */
+
+#newsletter {
+	#join {
+		form{
+			margin-left: 0;
+			input {
+				font-size: 70%;
+ 				&:first-child {
+ 					margin-left: 22%;
+				} 
+			}
+		}
+	}
+}
+
+
+	
+}
+
+
+
+@media screen and (max-width: 665px) {
+	/*  --- Modal navigation --- */
+	.nav-placeholder {
+		.contentModal {
+			top: 9%;
+		}
+	}
+
+}
+
+
+@media screen and (max-width: 479px) {
+	/*  --- Starting paralax --- */
+	#all {
+		#first {
+			background-size: 23%;
+			#logo {
+				margin-top: 45%;
+				width: 80%;
+			} 
+		}
+	}
+
+	/*  --- Modal navigation --- */
+	.nav-placeholder {
+		.contentModal {
+			top: 6%;
+		}
+	}
+
+	/* --- Image with text border --- */
+	#parallaxImage2 {
+		#includeImageHere {
+			#forBorder {
+				margin: 0 2%;
+				p {
+					color: white;
+					font-size: 210%;
+					border: none;
+				}
+			}
+		}
+	}
+
+
+}
+
+
+

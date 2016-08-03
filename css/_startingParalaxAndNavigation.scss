@@ -1,0 +1,128 @@
+/*
+
+  - - - - Pocetni paralax i navigacija - - - -  
+
+ */
+
+
+/* --- Paralax Scrolling --- */
+#all {
+	height: 200vh;
+	background: url("../img/background.jpg") repeat fixed 100%;
+	background-position: center;
+	#first {
+		height: 100vh;
+		background: url("../img/drip.svg") repeat;
+		background-size: 11%;
+		text-align: center;
+		#logo {
+			margin-top: 15%;
+			width: 30%;
+		}
+	}
+}
+
+	/* --- Text for paralax --- */ 
+	p.waterFor {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 900%;
+		color: white;
+		text-align: center;
+	}
+
+
+/* ---END Paralax Scrolling --- */
+
+
+
+
+
+
+ /*  --- Navigation / Header --- */
+
+ .hideForDesktop {
+	display: none; 
+} 
+
+nav {
+	min-height: 4%;
+	text-align: center;
+	z-index: 500;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none; 
+			font-weight: bold;
+			display: inline;
+			padding: 0 2%;
+			&:last-child a {
+				color: $shopColor;
+				&:hover {
+					border-bottom: 2px solid $shopColor;
+				}
+			}
+			a {
+				color: $textColor;
+				text-transform: uppercase;
+				@include transition(all 0.1s ease);
+				&:hover {
+					border-bottom: 2px solid $textColor;
+				} 
+			}
+		}
+	}
+}
+
+	/*  --- Fiksirana navigacija --- */
+.nav-placeholder {
+	max-width: 100%;
+}
+
+	/* ---- Fixed klasa ne postoji u HTML-u, vec se zadaje kroz JS... ---*/
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $whiteOpacity;
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(190,190,190,0.75);
+	-moz-box-shadow: 0px 2px 10px 0px rgba(190,190,190,0.75);
+	box-shadow: 0px 2px 10px 0px rgba(190,190,190,0.75);
+	z-index: 10;
+}
+
+
+	/*  --- Modal za mobilne uredjaje ---  */
+.contentModal {
+	background-color: white;
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 20;
+	top: 6%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	span {
+		float: right;
+		margin-right: 10%;
+		margin-top: 2%;
+		font-size: 120%;
+		cursor: pointer;
+	}
+	a {
+		display: block;
+		color: $textColor;
+		margin: 6% 3%;
+		font-size: 130%;
+		border-bottom: 2px solid $locationBack;
+	}
+}
+
+
+ /* ---END Navigation --- */

@@ -1,0 +1,132 @@
+
+/* ---What is Sway ---  */
+/* --- AND Our Story --- */
+
+.oneColumn {
+	margin: 10% auto;
+	p {
+		text-align: center;
+		font-size: 160%;
+		padding: 1% 30%;
+		line-height: 37px;
+	}
+}
+/* ---END What is Sway --- */
+/* --- END and Our Story */
+
+
+
+/* --- Flavors ---  */ 
+
+#flavors {
+	h3 {
+		padding-bottom: 4%;
+	}
+	.flavorsTwoRow {
+		background-size:  contain;
+		background-repeat: no-repeat;
+		height: 550px;
+		text-align: center;
+		padding-bottom: 5%;
+		img {
+			padding-top: 5%;
+			@include border-radius(50%);
+			width: 310px;
+			max-width: 100%;
+			height: auto;
+		}
+		a {
+			text-transform: uppercase;
+			color: $textColor;
+			padding: 3% 15%;
+			background-color: white;
+			@include transition(color 0.1s linear 0.1s, background 0.1s linear 0.1s);
+			&:hover {
+				background-color: $textColor;
+				color: white;
+			}
+		}
+		p {
+			text-transform: uppercase;
+			padding-bottom: 4%;
+			line-height: 25px;
+		}
+		#lastP {
+			text-transform: none;
+			padding-bottom: 15%;		
+		}
+		#lastH2 {
+			padding-top: 18%;
+		}
+	}
+
+	.flavorsFirst {
+		background-image: url("../img/flavorsBack1.png");
+		background-color: $flavorsGreen;
+	}
+	.flavorsSecond {
+		background-image: url("../img/flavorsBack2.png");
+		background-color: $flavorsYellow;
+		background-position: center;
+	}
+	.flavorsThird {
+		background-image: url("../img/flavorsBack3.png");
+		background-color: $flavorsPink;
+		background-position: bottom;
+	}
+	.flavorsFourth {
+		background-image: url("../img/flavorsBack4.png");
+		background-color: $flavorsBlue;	
+		background-position: right;	
+	}
+}
+/* --- END Flavors --- */
+
+
+
+
+
+
+/*  ---Paralax Article --- */
+
+#parallaxArticle {
+	background-image: url("../img/backgroundDown.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 1% 0;
+}
+
+/* --- END Paralax Article */
+
+/* --- Paralax Image 2 (down) --- */
+
+#parallaxImage2 {
+	#includeImageHere {
+		height: auto;
+		background-image: url("../img/commitment.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		padding-top: 12%;
+		padding-bottom: 11%;
+		#forBorder {
+			margin: 0 25%;
+			p {
+				text-transform: uppercase;
+				text-align: center;
+				color: white;
+				font-size: 300%;
+				font-weight: bold;
+				border: 8px solid white;
+				padding: 5% 3%;
+			}
+		}
+	}
+	h6 {
+		font-style: italic;
+		text-align: center;
+		color: gray;
+	}
+}
+
+

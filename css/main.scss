@@ -1,0 +1,110 @@
+ /*--- Imports --- */
+@import "variables";
+@import "twoColumns";
+@import "startingParalaxAndNavigation";
+@import "what-is-and-flavors";
+@import "process-and-slider";
+@import "find-us-and-footer";
+@import "responsive";
+
+/*  --- END imports */
+
+
+/*  --- All website --- */
+
+#wrapper {
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+article {
+	max-width: 100%;
+	h3 {
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+
+/* ---END All ---  */
+
+
+
+
+/* --- Wawes and Lemon animations --- */
+#wavesAnima{
+    position: fixed;
+    bottom: 450px;
+    left: 10%;
+    @include transition(all 3s ease-in-out);
+    @include animation(ani 8s infinite, spin 10s linear infinite);
+     img {
+     	width: 160px;
+     }
+}
+
+#lemonAnima{
+    position: fixed;
+    bottom: -100px;
+    right: 10%;
+    @include transition(all 2s ease-in-our);
+    @include animation(pani 7s infinite, spin 10s linear infinite);
+}
+
+	/*  --- Animation for wawes and for lemon --- */
+@keyframes spin{
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+	/*  --- Animations only for wawes --- */
+@keyframes ani{
+ 0% {
+   bottom: 450px;
+ }
+ 50% {
+   bottom: 0;
+ }
+ 100% {
+   bottom: 450px;
+ }
+}
+
+	/*  --- Animations only for lemon --- */
+@keyframes pani{
+ 0% {
+   bottom: -100px;
+ }
+ 50% {
+   bottom: 300px;
+ }
+ 100% {
+   bottom: -100px;
+ }
+}
+
+/* --- END Wawes and Lemon animations ---  */
+
+
+
+
+
+
+
+/* -- Sakrivanje naslova--Po W3.org validatoru svaki Artikal i sekcija moraju imati h2-h6--  */
+.hideHeading {
+	display: none;
+}
+/*  --- */
+
+
+/*  --- Clearfix float ---  */
+.clearfix {
+	clear: both;
+}
+/*  --- END clearfix --- */

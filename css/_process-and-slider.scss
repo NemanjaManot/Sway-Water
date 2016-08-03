@@ -1,0 +1,117 @@
+/* --- Background gradient --- */
+
+#backgroundGradient {
+	background: -webkit-linear-gradient($whiteGradient, $flavorsYellow,$flavorsGreen);
+    background: -o-linear-gradient($whiteGradient, $flavorsYellow,$flavorsGreen); 
+    background: -moz-linear-gradient($whiteGradient, $flavorsYellow,$flavorsGreen); 
+    background: linear-gradient($whiteGradient, $flavorsYellow,$flavorsGreen); 
+}
+
+/* ---END Background gradient ---  */
+
+/* ---Process --- */
+#process {
+	padding-top: 2%;
+
+	h3 {
+		padding-bottom: 4%;
+	}
+	section {
+		position: relative;
+		p {
+			text-align: center;
+			z-index: 1;
+			padding: 0 15%;
+			line-height: 35px;
+		}
+		.numberProcess {
+			color: $shopColorOpacity;
+			font-weight: bold;
+			font-size: 700%;
+			width: 0;
+			position: absolute;
+			top: 0;
+			left: 20%;
+		}
+	}
+}
+/* --- END Process --- */
+
+
+
+
+/*  --- SLider --- */
+
+#slider {
+	text-align: center;
+	button {
+		cursor: pointer;
+	    height: 12px;
+	    width: 8px;
+	    display: inline-block;
+	    border: none;
+	   	@include border-radius (50%);
+	   	margin: 10px 3px;
+		background-color: $textColor;
+	}
+}
+
+#imageSlider {
+	
+	img {
+		width: 900px;
+		max-width: 100%;
+		height: auto;
+	}
+	.hideImage {
+		display: none;
+	}
+}
+/*  --- END Slider ---- */
+
+
+
+
+/* --- Our Philosophy --- */
+
+#ourPhilosophy {
+	h5 {
+		text-align: center;
+		font-style: italic;
+	}
+
+	section {
+		margin-top: 7%;
+		p {
+			text-align: center;
+			padding: 0 4%;
+			text-align: left;
+			span {
+				border-bottom: 2px solid gray;
+				color: gray;
+			}
+		}
+	}
+}
+/*  --- END Our Philosophy --- */
+
+
+
+/*  --- Just some text and button --- */
+
+#justSomeText {
+	text-align: center;
+	padding-bottom: 5%;
+	a {
+		text-transform: uppercase;
+		color: $textColor;
+		background-color: $flavorsYellow;
+		padding: 2%;
+		@include transition(background 0.1s linear 0.1s);
+		&:hover {
+			background-color: white;
+		}
+	}
+}
+/* ---END Just some text and button --- */
+

@@ -1,0 +1,746 @@
+/*--- Imports --- */
+/*  --- Colors ---  */
+/* --- END colors --- */
+/* Transition */
+/*  --- END Transition ---  */
+/*  x-Transition */
+/*  --- END Transition ---  */
+/*  --- Border radius --- */
+/* --- END Border Radius --- */
+/* --- Two Columns ---  */
+.twoColumns {
+  width: 30%;
+  float: left;
+}
+
+.twoColumnsLeft {
+  margin: 0 1% 3% 19%;
+}
+
+.twoColumnsRight {
+  margin: 0 19% 3% 1%;
+}
+
+/*
+
+  - - - - Pocetni paralax i navigacija - - - -  
+
+ */
+/* --- Paralax Scrolling --- */
+#all {
+  height: 200vh;
+  background: url("../img/background.jpg") repeat fixed 100%;
+  background-position: center;
+}
+#all #first {
+  height: 100vh;
+  background: url("../img/drip.svg") repeat;
+  background-size: 11%;
+  text-align: center;
+}
+#all #first #logo {
+  margin-top: 15%;
+  width: 30%;
+}
+
+/* --- Text for paralax --- */
+p.waterFor {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 900%;
+  color: white;
+  text-align: center;
+}
+
+/* ---END Paralax Scrolling --- */
+/*  --- Navigation / Header --- */
+.hideForDesktop {
+  display: none;
+}
+
+nav {
+  min-height: 4%;
+  text-align: center;
+  z-index: 500;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+  font-weight: bold;
+  display: inline;
+  padding: 0 2%;
+}
+nav ul li:last-child a {
+  color: #ff7d5e;
+}
+nav ul li:last-child a:hover {
+  border-bottom: 2px solid #ff7d5e;
+}
+nav ul li a {
+  color: #191919;
+  text-transform: uppercase;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #191919;
+}
+
+/*  --- Fiksirana navigacija --- */
+.nav-placeholder {
+  max-width: 100%;
+}
+
+/* ---- Fixed klasa ne postoji u HTML-u, vec se zadaje kroz JS... ---*/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(190, 190, 190, 0.75);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(190, 190, 190, 0.75);
+  box-shadow: 0px 2px 10px 0px rgba(190, 190, 190, 0.75);
+  z-index: 10;
+}
+
+/*  --- Modal za mobilne uredjaje ---  */
+.contentModal {
+  background-color: white;
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 6%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.contentModal span {
+  float: right;
+  margin-right: 10%;
+  margin-top: 2%;
+  font-size: 120%;
+  cursor: pointer;
+}
+.contentModal a {
+  display: block;
+  color: #191919;
+  margin: 6% 3%;
+  font-size: 130%;
+  border-bottom: 2px solid #f7f1d5;
+}
+
+/* ---END Navigation --- */
+/* ---What is Sway ---  */
+/* --- AND Our Story --- */
+.oneColumn {
+  margin: 10% auto;
+}
+.oneColumn p {
+  text-align: center;
+  font-size: 160%;
+  padding: 1% 30%;
+  line-height: 37px;
+}
+
+/* ---END What is Sway --- */
+/* --- END and Our Story */
+/* --- Flavors ---  */
+#flavors h3 {
+  padding-bottom: 4%;
+}
+#flavors .flavorsTwoRow {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 550px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+#flavors .flavorsTwoRow img {
+  padding-top: 5%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 310px;
+  max-width: 100%;
+  height: auto;
+}
+#flavors .flavorsTwoRow a {
+  text-transform: uppercase;
+  color: #191919;
+  padding: 3% 15%;
+  background-color: white;
+  -webkit-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  -moz-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  -ms-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  -o-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+}
+#flavors .flavorsTwoRow a:hover {
+  background-color: #191919;
+  color: white;
+}
+#flavors .flavorsTwoRow p {
+  text-transform: uppercase;
+  padding-bottom: 4%;
+  line-height: 25px;
+}
+#flavors .flavorsTwoRow #lastP {
+  text-transform: none;
+  padding-bottom: 15%;
+}
+#flavors .flavorsTwoRow #lastH2 {
+  padding-top: 18%;
+}
+#flavors .flavorsFirst {
+  background-image: url("../img/flavorsBack1.png");
+  background-color: #e1f6b4;
+}
+#flavors .flavorsSecond {
+  background-image: url("../img/flavorsBack2.png");
+  background-color: #f8f49e;
+  background-position: center;
+}
+#flavors .flavorsThird {
+  background-image: url("../img/flavorsBack3.png");
+  background-color: #fedfc0;
+  background-position: bottom;
+}
+#flavors .flavorsFourth {
+  background-image: url("../img/flavorsBack4.png");
+  background-color: #dbe0d9;
+  background-position: right;
+}
+
+/* --- END Flavors --- */
+/*  ---Paralax Article --- */
+#parallaxArticle {
+  background-image: url("../img/backgroundDown.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 1% 0;
+}
+
+/* --- END Paralax Article */
+/* --- Paralax Image 2 (down) --- */
+#parallaxImage2 #includeImageHere {
+  height: auto;
+  background-image: url("../img/commitment.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 12%;
+  padding-bottom: 11%;
+}
+#parallaxImage2 #includeImageHere #forBorder {
+  margin: 0 25%;
+}
+#parallaxImage2 #includeImageHere #forBorder p {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 300%;
+  font-weight: bold;
+  border: 8px solid white;
+  padding: 5% 3%;
+}
+#parallaxImage2 h6 {
+  font-style: italic;
+  text-align: center;
+  color: gray;
+}
+
+/* --- Background gradient --- */
+#backgroundGradient {
+  background: -webkit-linear-gradient(#f2f2f2, #f8f49e, #e1f6b4);
+  background: -o-linear-gradient(#f2f2f2, #f8f49e, #e1f6b4);
+  background: -moz-linear-gradient(#f2f2f2, #f8f49e, #e1f6b4);
+  background: linear-gradient(#f2f2f2, #f8f49e, #e1f6b4);
+}
+
+/* ---END Background gradient ---  */
+/* ---Process --- */
+#process {
+  padding-top: 2%;
+}
+#process h3 {
+  padding-bottom: 4%;
+}
+#process section {
+  position: relative;
+}
+#process section p {
+  text-align: center;
+  z-index: 1;
+  padding: 0 15%;
+  line-height: 35px;
+}
+#process section .numberProcess {
+  color: rgba(255, 125, 94, 0.3);
+  font-weight: bold;
+  font-size: 700%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+/* --- END Process --- */
+/*  --- SLider --- */
+#slider {
+  text-align: center;
+}
+#slider button {
+  cursor: pointer;
+  height: 12px;
+  width: 8px;
+  display: inline-block;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 10px 3px;
+  background-color: #191919;
+}
+
+#imageSlider img {
+  width: 900px;
+  max-width: 100%;
+  height: auto;
+}
+#imageSlider .hideImage {
+  display: none;
+}
+
+/*  --- END Slider ---- */
+/* --- Our Philosophy --- */
+#ourPhilosophy h5 {
+  text-align: center;
+  font-style: italic;
+}
+#ourPhilosophy section {
+  margin-top: 7%;
+}
+#ourPhilosophy section p {
+  text-align: center;
+  padding: 0 4%;
+  text-align: left;
+}
+#ourPhilosophy section p span {
+  border-bottom: 2px solid gray;
+  color: gray;
+}
+
+/*  --- END Our Philosophy --- */
+/*  --- Just some text and button --- */
+#justSomeText {
+  text-align: center;
+  padding-bottom: 5%;
+}
+#justSomeText a {
+  text-transform: uppercase;
+  color: #191919;
+  background-color: #f8f49e;
+  padding: 2%;
+  -webkit-transition: background 0.1s linear 0.1s;
+  -moz-transition: background 0.1s linear 0.1s;
+  -ms-transition: background 0.1s linear 0.1s;
+  -o-transition: background 0.1s linear 0.1s;
+  transition: background 0.1s linear 0.1s;
+}
+#justSomeText a:hover {
+  background-color: white;
+}
+
+/* ---END Just some text and button --- */
+/*  --- Colors ---  */
+/* --- END colors --- */
+/* Transition */
+/*  --- END Transition ---  */
+/*  x-Transition */
+/*  --- END Transition ---  */
+/*  --- Border radius --- */
+/* --- END Border Radius --- */
+/* --- Google maps --- */
+.googleMaps {
+  position: relative;
+  padding-bottom: 43%;
+  height: 0;
+  overflow: hidden;
+}
+.googleMaps iframe {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/*  --- END Google maps */
+/* --- Locations ---  */
+#locations {
+  background-color: #f7f1d5;
+  padding-top: 3%;
+}
+#locations a {
+  color: #191919;
+  line-height: 30px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#locations a:hover {
+  border-bottom: 2px solid #191919;
+}
+#locations h2#sameColorBack {
+  color: #f7f1d5;
+}
+#locations span {
+  color: gray;
+  font-size: 95%;
+}
+
+/*  --- END Locations ---  */
+/* --- Contact Form */
+#contact {
+  padding: 1% 0;
+  text-align: center;
+  background-color: #dbe0d9;
+}
+#contact form input {
+  margin-bottom: 1%;
+}
+#contact form textarea, #contact form input {
+  background-color: #dbe0d9;
+  width: 30%;
+  padding: 1% 2%;
+  border: 3px solid #191919;
+  -webkit-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  -moz-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  -ms-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  -o-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+}
+#contact form textarea:hover, #contact form input:hover {
+  background-color: #f8f49e;
+}
+#contact a {
+  text-transform: uppercase;
+  color: white;
+  padding: 1% 4%;
+  background-color: #191919;
+  -webkit-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  -moz-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  -ms-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  -o-transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+  transition: color 0.1s linear 0.1s, background 0.1s linear 0.1s;
+}
+#contact a:hover {
+  background-color: white;
+  color: #191919;
+}
+
+/*  --- END Contact Form ---  */
+/* --- Newsletter ---  */
+#newsletter {
+  padding-top: 1%;
+  background-color: #d3f1f7;
+}
+#newsletter #join h2 {
+  text-align: center;
+}
+#newsletter #join form {
+  margin: 0 auto;
+  max-width: 100%;
+  margin-left: 33%;
+  text-align: left;
+}
+#newsletter #join form input {
+  float: left;
+  border: 2px solid #191919;
+  font-size: 90%;
+}
+#newsletter #join form input:first-child {
+  width: 25%;
+  padding: 2% 1%;
+  background-color: #d3f1f7;
+}
+#newsletter #join form input:last-child {
+  cursor: pointer;
+  border-left: none;
+  padding: 2% 8%;
+}
+#newsletter #join form input:last-child:hover {
+  background-color: #29353a;
+  color: white;
+}
+
+.footerTwoColumn {
+  text-align: center;
+}
+.footerTwoColumn #mailFooter {
+  border-bottom: 2px solid #191919;
+  color: #191919;
+  font-size: 120%;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.footerTwoColumn #mailFooter:hover {
+  border-bottom: 1px solid #191919;
+}
+
+#social a img {
+  background-color: #191919;
+  border: 1px solid #191919;
+  -webkit-transition: background 0.1s linear 0.1s;
+  -moz-transition: background 0.1s linear 0.1s;
+  -ms-transition: background 0.1s linear 0.1s;
+  -o-transition: background 0.1s linear 0.1s;
+  transition: background 0.1s linear 0.1s;
+}
+#social a img:hover {
+  background-color: #29353a;
+}
+
+@media screen and (max-width: 800px) {
+  /*  --- Starting paralax --- */
+  #all #first {
+    background-size: 20%;
+  }
+  #all #first #logo {
+    margin-top: 25%;
+    width: 60%;
+  }
+  #all .senses {
+    margin-top: 30%;
+  }
+
+  /*  --- Text for paralax --- */
+  p.waterFor {
+    font-size: 350% !important;
+  }
+
+  /* --- Image with text border --- */
+  #parallaxImage2 #includeImageHere #forBorder {
+    margin: 0 15%;
+  }
+  #parallaxImage2 #includeImageHere #forBorder p {
+    font-size: 250%;
+  }
+
+  /*  ---- Navigation ---- */
+  .nav-placeholder .contentModal {
+    top: 12%;
+  }
+  .nav-placeholder .hideForDesktop {
+    display: inline;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav-placeholder .hideForDesktop .logoOnMobile {
+    max-width: 20%;
+    padding-left: 10%;
+    display: inline;
+  }
+  .nav-placeholder .hideForDesktop .hamburgerIcon {
+    width: 6%;
+    cursor: pointer;
+    float: right;
+    padding-right: 3%;
+    padding-top: 1%;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  /*  -- One Column -- */
+  .oneColumn p {
+    font-size: 120%;
+    padding: 1% 5%;
+  }
+
+  /* --Two Columns -- */
+  .twoColumns {
+    min-width: 95%;
+    margin: 0 auto !important;
+    max-width: 100%;
+    float: none;
+  }
+
+  .twoColumnsLeft {
+    margin: 0;
+  }
+
+  .twoColumnsRight {
+    margin: 0;
+  }
+
+  /*  -- Contact -- */
+  form textarea, #contact form input {
+    min-width: 70%;
+    padding: 1% 2%;
+  }
+
+  /*  --- Newsletter (footer) --- */
+  #newsletter #join form {
+    margin-left: 0;
+  }
+  #newsletter #join form input {
+    font-size: 70%;
+  }
+  #newsletter #join form input:first-child {
+    margin-left: 22%;
+  }
+}
+@media screen and (max-width: 665px) {
+  /*  --- Modal navigation --- */
+  .nav-placeholder .contentModal {
+    top: 9%;
+  }
+}
+@media screen and (max-width: 479px) {
+  /*  --- Starting paralax --- */
+  #all #first {
+    background-size: 23%;
+  }
+  #all #first #logo {
+    margin-top: 45%;
+    width: 80%;
+  }
+
+  /*  --- Modal navigation --- */
+  .nav-placeholder .contentModal {
+    top: 6%;
+  }
+
+  /* --- Image with text border --- */
+  #parallaxImage2 #includeImageHere #forBorder {
+    margin: 0 2%;
+  }
+  #parallaxImage2 #includeImageHere #forBorder p {
+    color: white;
+    font-size: 210%;
+    border: none;
+  }
+}
+/*  --- END imports */
+/*  --- All website --- */
+#wrapper {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+article {
+  max-width: 100%;
+}
+article h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ---END All ---  */
+/* --- Wawes and Lemon animations --- */
+#wavesAnima {
+  position: fixed;
+  bottom: 450px;
+  left: 10%;
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  -ms-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+  -webkit-animation: ani 8s infinite, spin 10s linear infinite;
+  -moz-animation: ani 8s infinite, spin 10s linear infinite;
+  -o-animation: ani 8s infinite, spin 10s linear infinite;
+  animation: ani 8s infinite, spin 10s linear infinite;
+}
+#wavesAnima img {
+  width: 160px;
+}
+
+#lemonAnima {
+  position: fixed;
+  bottom: -100px;
+  right: 10%;
+  -webkit-transition: all 2s ease-in-our;
+  -moz-transition: all 2s ease-in-our;
+  -ms-transition: all 2s ease-in-our;
+  -o-transition: all 2s ease-in-our;
+  transition: all 2s ease-in-our;
+  -webkit-animation: pani 7s infinite, spin 10s linear infinite;
+  -moz-animation: pani 7s infinite, spin 10s linear infinite;
+  -o-animation: pani 7s infinite, spin 10s linear infinite;
+  animation: pani 7s infinite, spin 10s linear infinite;
+}
+
+/*  --- Animation for wawes and for lemon --- */
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*  --- Animations only for wawes --- */
+@keyframes ani {
+  0% {
+    bottom: 450px;
+  }
+
+  50% {
+    bottom: 0;
+  }
+
+  100% {
+    bottom: 450px;
+  }
+}
+/*  --- Animations only for lemon --- */
+@keyframes pani {
+  0% {
+    bottom: -100px;
+  }
+
+  50% {
+    bottom: 300px;
+  }
+
+  100% {
+    bottom: -100px;
+  }
+}
+/* --- END Wawes and Lemon animations ---  */
+/* -- Sakrivanje naslova--Po W3.org validatoru svaki Artikal i sekcija moraju imati h2-h6--  */
+.hideHeading {
+  display: none;
+}
+
+/*  --- */
+/*  --- Clearfix float ---  */
+.clearfix {
+  clear: both;
+}
+
+/*  --- END clearfix --- */

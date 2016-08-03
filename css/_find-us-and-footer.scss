@@ -1,0 +1,147 @@
+@import "variables";
+
+
+/* --- Google maps --- */ 
+
+  .googleMaps {
+     position: relative;
+     padding-bottom: 43%; 
+     height: 0;
+     overflow: hidden;
+     iframe {
+     	pointer-events: none; // For NO Scrooling
+     	position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+     }
+ }
+ 
+ /*  --- END Google maps */
+
+
+/* --- Locations ---  */
+
+#locations {
+	background-color: $locationBack;
+	padding-top: 3%;
+	a {
+		color: $textColor;
+		line-height: 30px;
+		@include transition(all 0.2s ease);
+		&:hover {
+			border-bottom: 2px solid $textColor;
+		}
+	}
+	h2#sameColorBack {
+		color: $locationBack;
+	}
+	span {
+		color: gray;
+		font-size: 95%;
+	}
+}
+/*  --- END Locations ---  */
+
+
+
+/* --- Contact Form */
+
+#contact {
+	padding: 1% 0;
+	text-align: center;
+	background-color: $flavorsBlue;
+	form {
+		input {
+			@extend textarea;
+			margin-bottom: 1%;
+		}
+		textarea {
+			background-color: $flavorsBlue;
+			width: 30%;
+			padding: 1% 2%;
+			border: 3px solid $textColor;
+			@include transition(color 0.1s linear 0.1s, background 0.1s linear 0.1s);
+			&:hover {
+				background-color: $flavorsYellow;
+			}
+		}
+	}
+	a {
+		text-transform: uppercase;
+		color: white;
+		padding: 1% 4%;
+		background-color: $textColor;
+		@include transition(color 0.1s linear 0.1s, background 0.1s linear 0.1s);
+		&:hover {
+			background-color: white;
+			color: $textColor;
+		}
+	}
+}
+/*  --- END Contact Form ---  */
+
+
+/* --- Newsletter ---  */
+
+#newsletter {
+	padding-top: 1%;
+	background-color: $newsletterBlue;
+	#join {
+		h2 {
+			text-align: center;
+		}
+		form{
+			margin: 0 auto;
+			max-width: 100%;
+			margin-left: 33%;
+			text-align: left;
+			input {
+				float: left;
+				border: 2px solid $textColor; 
+				font-size: 90%;
+ 				&:first-child {
+ 					width: 25%;
+ 					padding: 2% 1%;
+					background-color: $newsletterBlue;
+				} 
+				&:last-child {
+					cursor: pointer;
+					border-left: none;
+					padding: 2% 8%;
+					&:hover {
+						background-color: $subscribeHover;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footerTwoColumn {
+	text-align: center;
+	#mailFooter {
+		border-bottom: 2px solid $textColor;
+		color: $textColor;
+		font-size: 120%;
+		font-weight: bold;
+		@include transition(all 0.2s ease);
+		&:hover {
+			border-bottom: 1px solid $textColor;
+		}
+	}
+}
+#social {
+	a {
+		img {
+			background-color: $textColor; 
+			border: 1px solid $textColor;
+			@include transition(background 0.1s linear 0.1s);
+			&:hover {
+				background-color: $subscribeHover;
+			}
+		}
+	}
+}
