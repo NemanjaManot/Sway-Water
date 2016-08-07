@@ -1,5 +1,3 @@
-jQuery(document).ready(function($) {
-	
 
 $(document).ready(function() {
 
@@ -16,6 +14,23 @@ $(document).ready(function() {
 
 		e.preventDefault();
 	})
+
+
+
+	/* ---  Show/hide text on starting paralax --- */
+
+	var showHide = $("#showHide");
+	var pos = showHide.position();
+	$(window).scroll(function () {
+	   	var windowpos = $(window).scrollTop();
+	   	if (windowpos >= (pos.top - 500)) {
+	   		$(".waterFor").fadeIn(500);
+	   	}	
+	   	else {
+	     	$(".waterFor").fadeOut(500);
+	   	}
+	});
+
 	
 	/* --- Sticky navigation ---*/
 
@@ -63,6 +78,45 @@ $(document).ready(function() {
 	/* --- END Sticky navigation ---*/
 
 
+
+ 	   /* --- Underline navigation list on 'that' position ---*/
+	var whatPos = $("#whatIsSway").position();
+	var flavorsPos = $("#flavors").position();
+	var processPos = $("#process").position();
+	var storyPos = $("#ourStory").position();
+	var locationsPos = $("#whereFindUs").position();
+	var contactPos = $("#contact").position();
+
+	$(window).scroll(function() {
+		if( $(this).scrollTop() > whatPos.top-100) {
+	  		$('a').removeClass('current');
+	    	$('.whatIsSwayClass').addClass('current');
+	  	}
+		if( $(this).scrollTop() > flavorsPos.top-100) {
+			$('a').removeClass('current');
+	    	$('.flavorsClass').addClass('current');
+	  	}
+	  	if( $(this).scrollTop() > processPos.top-100) {
+	  		$('a').removeClass('current');
+	    	$('.processClass').addClass('current');
+	  	}
+	  	if( $(this).scrollTop() > storyPos.top-100) {
+	  		$('a').removeClass('current');
+	    	$('.ourStoryClass').addClass('current');
+	  	}
+	  	if( $(this).scrollTop() > locationsPos.top-100) {
+	  		$('a').removeClass('current');
+	    	$('.whereFindUsClass').addClass('current');
+	  	}
+	  	if( $(this).scrollTop() > contactPos.top-100) {
+	  		$('a').removeClass('current');
+	    	$('.contactClass').addClass('current');
+	  	}
+	});
+ 	   /* --- END Underline navigation list on 'that' position ---*/
+
+
+
 	/* ---- Modal Window (nav) ---- */
 
 	$(".hamburgerIcon").click(function() 
@@ -89,20 +143,11 @@ $(document).ready(function() {
 
     /*--- END Google Maps --- */
 
+
+
 	
 });
 
 
-	/* --- Menu navigation for media q --- */
-/*	jQuery(".hide").click(function() {
-		
-		jQuery(".nav-menu").slideToggle(400, function() {
-			jQuery(this).toggleClass("nav-expanded").css('display', '');
-		});
-		
-	});*/
-	/*--- END Menu navigation for media q --- */
 
-
-});
 
