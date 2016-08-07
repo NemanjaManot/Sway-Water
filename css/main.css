@@ -22,7 +22,6 @@
 }
 
 /*
-
   - - - - Pocetni paralax i navigacija - - - -  
 
  */
@@ -56,6 +55,11 @@ p.waterFor {
 /*  --- Navigation / Header --- */
 .hideForDesktop {
   display: none;
+}
+
+/*  --- Klasa koja se dodaje na fiksiranu navigaciju (scroll) --- */
+.current {
+  border-bottom: 2px solid #191919;
 }
 
 nav {
@@ -143,6 +147,10 @@ nav ul li a:hover {
 /* ---END Navigation --- */
 /* ---What is Sway ---  */
 /* --- AND Our Story --- */
+#whatIsSway {
+  padding-top: 2%;
+}
+
 .oneColumn {
   margin: 10% auto;
 }
@@ -156,6 +164,9 @@ nav ul li a:hover {
 /* ---END What is Sway --- */
 /* --- END and Our Story */
 /* --- Flavors ---  */
+#flavors {
+  padding-top: 2%;
+}
 #flavors h3 {
   padding-bottom: 4%;
 }
@@ -296,6 +307,12 @@ nav ul li a:hover {
 }
 
 /* --- END Process --- */
+/*  --- Our Story --- */
+#ourStory {
+  padding-top: 2%;
+}
+
+/*  --- END Our Story --- */
 /*  --- SLider --- */
 #slider {
   text-align: center;
@@ -363,14 +380,13 @@ nav ul li a:hover {
 }
 
 /* ---END Just some text and button --- */
-/*  --- Colors ---  */
-/* --- END colors --- */
-/* Transition */
-/*  --- END Transition ---  */
-/*  x-Transition */
-/*  --- END Transition ---  */
-/*  --- Border radius --- */
-/* --- END Border Radius --- */
+/*  --- Where find us --- */
+#whereFindUs {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/*  --- END Where find us --- */
 /* --- Google maps --- */
 .googleMaps {
   position: relative;

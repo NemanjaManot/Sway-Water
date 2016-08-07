@@ -1,5 +1,5 @@
-/*
 
+/*
   - - - - Pocetni paralax i navigacija - - - -  
 
  */
@@ -43,6 +43,10 @@
 
  .hideForDesktop {
 	display: none; 
+}
+	/*  --- Klasa koja se dodaje na fiksiranu navigaciju (scroll) --- */
+.current{
+	border-bottom: 2px solid $textColor;
 } 
 
 nav {
